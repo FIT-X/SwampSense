@@ -5669,9 +5669,16 @@ vue-toasted@^1.1.26:
   resolved "https://registry.yarnpkg.com/vue-toasted/-/vue-toasted-1.1.26.tgz#1333d1a42157ab78389c3810023a49ba94e69c7b"
   integrity sha512-Z4/gfPcqdzsRvif7UITrZOkh3C6jm0yQKJyr9kX31IGWXor5dNipE1Sc5SnlL5RLmY7vlLa+SqIjc9Gbpy7V0g==
 
-vue@^2.6.6:
+vue@^2.5.17, vue@^2.6.6:
   version "2.6.10"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.6.10.tgz#a72b1a42a4d82a721ea438d1b6bf55e66195c637"
+
+vuejs-thermometer@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/vuejs-thermometer/-/vuejs-thermometer-0.0.4.tgz#83a00773bee80670334f3583bad5262ecf9e971e"
+  integrity sha512-lhmcOlzRYvX4M3qhF62sAL5aTLqco2bqjg2Jsqf+B+EtdMVUEWPoVHXZNeZDupnlGGvfMRLPuYjWb+ntJHMkqg==
+  dependencies:
+    vue "^2.5.17"
 
 watchpack@^1.5.0:
   version "1.6.0"

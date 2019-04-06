@@ -12,7 +12,8 @@
     "vue-class-component": "^6.0.0",
     "vue-property-decorator": "^8.0.0",
     "vue-router": "^3.0.1",
-    "vue-toasted": "^1.1.26"
+    "vue-toasted": "^1.1.26",
+    "vuejs-thermometer": "^0.0.4"
   },
   "devDependencies": {
     "@vue/cli-plugin-typescript": "^3.5.0",
