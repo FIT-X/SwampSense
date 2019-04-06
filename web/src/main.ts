@@ -6,6 +6,9 @@ import './style.scss'
 
 Vue.config.productionTip = false
 
+import Toasted from 'vue-toasted';
+Vue.use(Toasted);
+
 new Vue({
   router,
   render: h => h(App)

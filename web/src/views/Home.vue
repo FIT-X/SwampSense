@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
     <button @click='ledOn'>On</button>
     <button @click='ledOff'>Off</button>
   </div>
@@ -30,10 +29,11 @@ export default class Home extends Vue {
       .post(url, {
         args: "on"
       })
-      .then(function(response) {
+      .then((response) => {
         console.log(response);
+        this.$toasted.show(response.data.return_value)
       })
-      .catch(function(error) {
+      .catch((error) => {
         console.log(error);
       });
   }
@@ -46,10 +46,11 @@ export default class Home extends Vue {
       .post(url, {
         args: "off"
       })
-      .then(function(response) {
+      .then((response) => {
+        this.$toasted.show(response.data.return_value)
         console.log(response);
       })
-      .catch(function(error) {
+      .catch((error) => {
         console.log(error);
       });
   }
