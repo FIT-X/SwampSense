@@ -3,9 +3,15 @@
         <vue-thermometer
             :value="temperature"
             :min="0"
-            :max="255" />
-        <button @click='ledOn'>On</button>
-        <button @click='ledOff'>Off</button>
+            :max="100"
+            scale="F" />
+        <div>
+            <button @click='ledOn'>On</button>
+            <button @click='ledOff'>Off</button>
+        </div>
+        <div>
+            <img src='https://storage.googleapis.com/hatterhacks2k19/output.jpg?dummy=123'>
+        </div>
     </div>
 </template>
 
@@ -24,6 +30,8 @@ const POLL_RATE = 5000;
 })
 export default class Home extends Vue {
     temperature = 0;
+    pressure = 0;
+    brightness = 0;
 
     mounted() {
         console.log(process.env.VUE_APP_PARTICLE_ACCESS_TOKEN);
@@ -80,3 +88,13 @@ export default class Home extends Vue {
     }
 }
 </script>
+
+<style lang="scss" scoped>
+.home {
+    > div {
+        display: inline-block;
+        padding: 15px;
+        vertical-align: middle;
+    }
+}
+</style>
